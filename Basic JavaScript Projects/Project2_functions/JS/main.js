@@ -15,3 +15,14 @@ function date_Function() {
   document.getElementById("dateTime").innerHTML = str2; //change message from original html to str2 on click
   document.getElementById("timeDemo").innerHTML = Date(); //display provided date and time function
 }
+
+function Calculator() {
+  var calc = 107 + 20;
+  document.getElementById("calcDemo").innerHTML = calc;
+}
+
+function eraCalc(inningsPitched, earnedRuns) {
+  era = (9 * earnedRuns) / inningsPitched;
+  document.getElementById("eraCalculator").innerHTML = era; //display provided calculated ERA from respecitve arguments
+  return era;
+}
