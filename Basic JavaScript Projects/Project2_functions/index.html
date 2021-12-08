@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Project2_functions</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="" />
     <script src="JS/main.js"></script>
   </head>
   <body>
+    <!-- this button is to change font color to red on click -->
     <button onclick="My_First_Function()" id="Red_Text">Click me!</button>
     <br />
-    <button onclick="document.getElementById('timeDemo').innerHTML=Date()">
-      Want to know the time and date? Click and I'll tell ya...
-    </button>
-    <p id="timeDemo"></p>
+    <!--This p changes to new message when clicked -->
+    <p id="Concantenate" onclick="My_Function_1()">
+      Click Here to show my message!
+    </p>
+    <br />
+    <!--This is a time and date function i found on the internet-->
+    <div>
+      <button id="dateTime" onclick="date_Function()">
+        Want to know the time and date? Click and I'll tell ya...
+      </button>
+      <p id="timeDemo"></p>
+    </div>
   </body>
   <footer></footer>
 </html>
