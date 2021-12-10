@@ -16,7 +16,6 @@ function Add() {
     addOn();
     error();
     return startingNumber;
-    return errorStartValue;
   }
 }
 
