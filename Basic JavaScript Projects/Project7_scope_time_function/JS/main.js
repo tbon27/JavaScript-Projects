@@ -10,11 +10,8 @@ function Add() {
     function addOn() {
       startingNumber += 20;
     }
-    function error() {
-      errorStartValue += 20;
-    }
+
     addOn();
-    error();
     return startingNumber;
   }
 }
