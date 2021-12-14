@@ -28,10 +28,10 @@ showSlides(slideIndex); //call showSlides with var slideIndex
 
 //START SLIDESHOW
 //this is to give a user some direction where to start slideshow with a click -- could just instruct to click arrows or dots
-function startSlides(n) {
-  //at slide n (whichever it may be)
-  showSlides((slideIndex += n)); //call showSlides() and add one to slide index var
-}
+// function startSlides(n) {
+//   //at slide n (whichever it may be)
+//   showSlides((slideIndex += n)); //call showSlides() and add one to slide index var
+// }
 //Next/prev controls
 function plusSlides(n) {
   showSlides((slideIndex += n)); //call showSlides() and add one to slide index var
