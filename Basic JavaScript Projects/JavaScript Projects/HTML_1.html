@@ -6,22 +6,79 @@
     <link rel="stylesheet" type="text/css" href="" />
     <script src="JavaScript/JavaScript_1.js" defer></script>
   </head>
+  <body>
+    <!-- SWITCH demo-->
+    <h1>What is your favorite genre of music?</h1>
+    <h3>Pick your favorite genre of music from this list:</h3>
+    <ul>
+      <li>Reggae</li>
+      <li>Country</li>
+      <li>Classical</li>
+      <li>R&B</li>
+      <li>Rock</li>
+      <li>Other</li>
+    </ul>
+    <h3>Enter your choice below:</h3>
 
-  <h1>What is your favorite genre of music?</h1>
-  <h3>Pick your favorite genre of music from this list:</h3>
-  <ul>
-    <li>Reggae</li>
-    <li>Country</li>
-    <li>Classical</li>
-    <li>R&B</li>
-    <li>Rock</li>
-    <li>Other</li>
-  </ul>
-  <h3>Enter your choice below:</h3>
+    <input id="Genre_Input" type="text" />
+    <button onclick="Genre_Function()">Submit genre</button>
+    <p id="Output"></p>
 
-  <input id="Genre_Input" type="text" />
-  <button onclick="Genre_Function()">Submit genre</button>
-  <p id="Output"></p>
+    <!-- getElementsByClassID-->
+    <h2 class="Click">This text will change!</h2>
+    <h3 class="Click">This text will not change!</h3>
+    <button onclick="Hello_World_Function()">Click me!</button>
+
+    <!-- Canvas Element-->
+    <canvas
+      id="Background_shape"
+      width="500"
+      height="500"
+      style="
+        border: 5px dashed green;
+        border-radius: 5%;
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        padding: 5px 8px;
+        z-index: -2;
+      "
+    ></canvas>
+    <!-- Canvas Path demo -->
+    <canvas
+      id="pathCanvas"
+      width="500"
+      height="500"
+      style="
+        border: 2px dotted #d3d3d3;
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        padding: 5px 8px;
+        z-index: -1;
+      "
+    >
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <!--createLinearGradient() method-->
+    <canvas
+      id="gradientCanvas"
+      width="490"
+      height="40"
+      style="
+        border: 10px dotted #ff00ea;
+        position: absolute;
+        display: flex;
+        top: 445px;
+        z-index: -1;
+      "
+    >
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
+  </body>
 
   <footer></footer>
 </html>
