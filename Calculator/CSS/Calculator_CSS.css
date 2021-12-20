@@ -87,7 +87,7 @@ button:hover {
   border-color: darkslategray;
   color: #fff;
   height: 100%;
-  grid-area: 2 / 4 / 6 / 5;
+  grid-area: 2 / 4 / 6 / 5;  /*specifies a grid item’s size and location within a grid by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area. */
 }
 
 .equal-sign:hover {
