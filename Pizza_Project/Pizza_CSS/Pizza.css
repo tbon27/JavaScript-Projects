@@ -94,8 +94,15 @@ img {
   padding-top: 5px;
   padding-left: 50px;
 }
-
-/* Float toppings menu to right, beside sizes*/
+/* Float veggies toppings menu to right, beside sizes*/
+.center {
+  width: 600px;
+  height: 200px;
+  float: right;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+/* Float toppings menu to right, beside sizes and meats*/
 .right {
   width: 600px;
   height: 200px;
@@ -104,13 +111,6 @@ img {
   padding-left: 50px;
 }
 
-.center {
-  width: 600px;
-  height: 200px;
-  float: right;
-  padding-top: 5px;
-  padding-left: 50px;
-}
 #showText {
   width: 200px;
   height: 190px;
