@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JSX Assignment</title>
+    <link rel="stylesheet" type="text/css" href="" />
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="DEMO"></div>
+    <script type="text/babel">
+      class Greeting extends React.Component {
+        render() {
+          return (
+            <h1>
+              This is an example of JSX in action!
+              <br />
+              We're using React and Babel!
+            </h1>
+          );
+        }
+      }
+      ReactDOM.render(<Greeting />, document.getElementById("DEMO"));
+    </script>
+  </body>
+</html>
