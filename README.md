@@ -2,7 +2,7 @@
 
 ![This is an image](https://gblobscdn.gitbook.com/spaces%2F-LdbqCujxzeJqeQqlbM2%2Favatar.png?alt=media)
 
-## Here are some small projects that I made using JavaScript
+### Here are some small projects that I made using JavaScript
 
 - [Pizza Menu](https://github.com/tbon27/JavaScript-Projects/tree/main/Pizza_Project)
 - [Tic-Tac-Toe Game](https://github.com/tbon27/JavaScript-Projects/tree/main/TicTacToe)
