@@ -4,9 +4,9 @@
 
 ## Here are some small projects that I made using JavaScript
 
-- [Pizza Menu](JavaScript-Projects/tree/main/Pizza_Project)
-- [Tic-Tac-Toe Game](JavaScript-Projects/tree/main/TicTacToe)
-- [Calculator](JavaScript-Projects/tree/main/Calculator)
+- [Pizza Menu](JavaScript-Projects//Pizza_Project/Pizza.html)
+- [Tic-Tac-Toe Game](JavaScript-Projects/TicTacToe/TicTacToe.html)
+- [Calculator](JavaScript-Projects/Calculator/calculator.html)
 
 ## Pizza Menu
 
