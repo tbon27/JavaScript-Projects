@@ -1,0 +1,152 @@
+/*GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+body {
+  background-color: rgb(243, 191, 191);
+}
+
+h1 {
+  font-family: "Twinkle Star", cursive;
+  color: rgb(48, 14, 14);
+  font-size: 3.5rem;
+}
+
+#OrderHere {
+  text-align: center;
+  padding-right: 70px;
+  padding-top: 10px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 63, 24);
+  font-size: 1.75rem;
+}
+
+div {
+  font-family: "Indie Flower", cursive;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0px;
+}
+
+img {
+  height: 250px;
+  width: auto;
+  padding-left: 700px;
+}
+
+#nav_list {
+  display: block;
+  list-style-type: none;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  padding: 0;
+  padding-right: 150px;
+  text-align: right;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Garamond";
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.nav_options {
+  display: inline;
+  font-size: 25px;
+}
+
+#BusinessName {
+  position: absolute;
+  top: -25px;
+  padding: 0;
+  font-size: 2.5rem;
+}
+
+#menuBG {
+  width: 900px;
+  height: 570px;
+  margin: 20px auto;
+  background-color: rgb(158, 255, 171);
+  border: 5px dotted black;
+}
+
+#frmMenu {
+  width: 100%;
+  height: 200px;
+  top: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+/* Float size menu to left, beside toppings*/
+.left {
+  width: 600px;
+  height: 200px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+/* Float veggies toppings menu to right, beside sizes*/
+.center {
+  width: 600px;
+  height: 200px;
+  float: right;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+/* Float toppings menu to right, beside sizes and meats*/
+.right {
+  width: 600px;
+  height: 200px;
+  float: right;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+#showText {
+  width: 200px;
+  height: 190px;
+  margin: 0px auto;
+  float: left;
+  position: relative;
+}
+#totalPrice {
+  width: 200px;
+  height: 190px;
+  margin: 0px auto;
+  float: right;
+  position: relative;
+}
+
+#cart {
+  margin-top: 200px;
+  left: 0px;
+  width: 500px;
+  height: 100px;
+  z-index: 1;
+  padding: 20px;
+}
+
+#btnOrder {
+  margin: 10px 0px 0px 350px;
+  width: auto;
+  height: 40px;
+  background-color: green;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#btnOrder:hover {
+  background-color: greenyellow;
+  color: black;
+}
