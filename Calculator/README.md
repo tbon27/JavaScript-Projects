@@ -1,5 +1,5 @@
 # Basic JavaScript Calculator
-<img src="https://github.com/tbon27/JavaScript-Projects/blob/main/Calculator/readmeSS1.png" width="650" height="410">
+<img src="https://github.com/tbon27/JavaScript-Projects/blob/main/Calculator/readmeSS1.png" width="400" height="300">
 
 ### Welcome to my Basic JavaScript Calculator repository!
 
