@@ -1,4 +1,4 @@
-# Browser Tic-Tac-Toe
+# JavaScript Tic-Tac-Toe
 <img src="https://github.com/tbon27/JavaScript-Projects/blob/main/TicTacToe/readmeSS1.png" width="650" height="410">
 
 ### Welcome to my JavaScript Tic-Tac-Toe repository!
