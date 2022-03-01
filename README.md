@@ -7,6 +7,7 @@
 - [Pizza Menu](https://github.com/tbon27/JavaScript-Projects/tree/main/Pizza_Project)
 - [Tic-Tac-Toe Game](https://github.com/tbon27/JavaScript-Projects/tree/main/TicTacToe)
 - [Calculator](https://github.com/tbon27/JavaScript-Projects/tree/main/Calculator)
+- [Pig Game](https://github.com/tbon27/JavaScript-Projects/tree/main/Pig-Game)
 
 ## Pizza Menu
 
@@ -19,3 +20,7 @@
 ## Calculator
 
 #### A basic 4 function calculator. Users can add, subtract, multiply, and divide on a sleek web version of a calculator.
+
+## Pig Game
+
+#### This small game was completed through the Jonas Schmedtmann course [Complete JavaScript Course](https://www.udemy.com/share/101Wfe3@613KS61y1D8YDUVv8mn7Hy81FI6LenWrLGkUcgZUN_iCNDlooEs-XDgTOIFH2lQa/) presented by Udemy. 
