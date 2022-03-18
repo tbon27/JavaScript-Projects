@@ -23,4 +23,4 @@
 
 ## Pig Game
 
-#### This small game was completed through the Jonas Schmedtmann course [Complete JavaScript Course](https://www.udemy.com/share/101Wfe3@613KS61y1D8YDUVv8mn7Hy81FI6LenWrLGkUcgZUN_iCNDlooEs-XDgTOIFH2lQa/) presented by Udemy. 
+#### This small game was completed through the Jonas Schmedtmann course [Complete JavaScript Course](https://www.udemy.com/share/101Wfe3@613KS61y1D8YDUVv8mn7Hy81FI6LenWrLGkUcgZUN_iCNDlooEs-XDgTOIFH2lQa/) presented by Udemy. In this game try to increase your bank without landing on the number 1, if you do then you lose all of your score!
