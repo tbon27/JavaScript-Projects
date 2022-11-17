@@ -3,27 +3,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
-body {
-  background-color: rgb(243, 191, 191);
-}
-
 h1 {
   font-family: "Twinkle Star", cursive;
   color: rgb(48, 14, 14);
   font-size: 3.5rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #OrderHere {
   text-align: center;
-  padding-right: 70px;
-  padding-top: 10px;
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.574);
 }
 
-h3 {
+h2 {
   font-family: "Montserrat", sans-serif;
-  color: rgb(0, 63, 24);
-  font-size: 1.75rem;
+  color: rgb(255, 255, 255);
 }
+
 
 div {
   font-family: "Indie Flower", cursive;
@@ -33,15 +33,14 @@ div {
 
 footer {
   position: relative;
+  padding: 8px;
   bottom: 0;
-  left: 0px;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.075);
+  text-align: center;
 }
 
-img {
-  height: 250px;
-  width: auto;
-  padding-left: 700px;
-}
+
 
 #nav_list {
   display: block;
@@ -71,49 +70,57 @@ img {
 }
 
 #menuBG {
-  width: 900px;
-  height: 570px;
-  margin: 20px auto;
-  background-color: rgb(158, 255, 171);
-  border: 5px dotted black;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  top: -470px;
+
+  padding: 0;
+  background-image: linear-gradient(rgba(137, 0, 0, 0.686), rgb(0, 0, 0));
+
 }
 
 #frmMenu {
+  position: relative;
+
   width: 100%;
   height: 200px;
-  top: 0;
   padding: 0;
-  display: inline-flex;
+  display: block;
 }
+
 
 /* Float size menu to left, beside toppings*/
 .left {
-  width: 600px;
-  height: 200px;
+  width: 300px;
+  margin: 0 auto;
   float: left;
-  padding-top: 5px;
-  padding-left: 50px;
+  color: white;
+  left:0;
 }
 /* Float veggies toppings menu to right, beside sizes*/
 .center {
-  width: 600px;
-  height: 200px;
-  float: right;
-  padding-top: 5px;
-  padding-left: 50px;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
 }
 /* Float toppings menu to right, beside sizes and meats*/
 .right {
-  width: 600px;
-  height: 200px;
+
+  width: 300px;
   float: right;
-  padding-top: 5px;
-  padding-left: 50px;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  color: white;
 }
 
 #showText {
   width: 200px;
-  height: 190px;
+  height: 390px;
   margin: 0px auto;
   float: left;
   position: relative;
@@ -127,12 +134,13 @@ img {
 }
 
 #cart {
-  margin-top: 200px;
   left: 0px;
   width: 500px;
-  height: 100px;
+  height: 500px;
   z-index: 1;
   padding: 20px;
+  margin: 0 auto;
+  display: block;
 }
 
 #btnOrder {
@@ -150,3 +158,16 @@ img {
   background-color: greenyellow;
   color: black;
 }
+
+#about{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+      font-size: 2vw;
+      }
+  }
