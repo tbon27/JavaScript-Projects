@@ -1,5 +1,5 @@
 # Online Pizza Ordering Website
-<img src="https://github.com/tbon27/JavaScript-Projects/blob/main/Pizza_Project/readmeSS1.png" width="550" height="340">
+<img src="https://github.com/tbon27/JavaScript-Projects/blob/main/Pizza_Project/JSwebsiteTemplate.gif" width="550" height="340">
 
 ### Welcome to my Online Pizza Ordering Website repository!
 
