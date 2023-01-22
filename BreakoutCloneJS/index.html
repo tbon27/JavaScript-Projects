@@ -36,19 +36,19 @@
           background: rgb(111, 0, 0);
         }
         60%{
-          background: rgb(111, 65, 0);
+          background: rgb(55, 0, 49);
         }
         70% {
-          background: rgb(111, 76, 0);
+          background: rgb(0, 25, 64);
         }
         80%{
-          background: rgb(55, 52, 0);
+          background: rgb(51, 0, 9);
         }
         90%{
           background: rgb(0, 0, 0);
         }
         100% {
-          background: rgb(0, 65, 0);
+          background: rgb(0, 40, 71);
         }
       }
       #title-top {
@@ -59,7 +59,12 @@
     </style>
   </head>
   <body>
-    <h2 id="title-top">Breakout JavaScript Clone</h2>
+    <h3 id="title-top">Breakout JavaScript Clone</h3>
+    <div style="background-color: rgba(103, 217, 255, 0.512); display: block; width: 480px; height: 30px; text-align: center; margin: 0 auto;">
+      <div id="info-container" style="padding: 5px;">
+        <button id="pause-button" style="display:block; left: 0; padding: 1px;" onclick="pauseButton()">Pause</button>
+      </div>
+    </div>
     <canvas id="myCanvas" width="480" height="320"></canvas>
 
     <script>
@@ -95,17 +100,20 @@
         }
       }
       
-      let score = 0;
-      let lives = 2;
+      var score = 0;
+      var lives = 2;
       //let paused = false;
+      var gameOver = false;
       let myReq;
       document.getElementById("myCanvas").style.cursor = "ew-resize";
+      document.addEventListener("keydown", pauseKeyDownHandler, false);
       document.addEventListener("keydown", keyDownHandler, false);
       document.addEventListener("keyup", keyUpHandler, false);
       document.addEventListener("mousemove", mouseMoveHandler, false);
+      document.addEventListener("keydown", restartKeyDownHandler, false);
 
       // Timer
-      let [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+      let [milliseconds,seconds,minutes] = [0,0,0];
       setInterval(displayTimer,10);
       function displayTimer(){
         milliseconds += 10;
@@ -116,10 +124,7 @@
             if(seconds == 60){
                 seconds = 0;
                 minutes++;
-              if(minutes == 60){
-                  minutes = 0;
-                  hours++;
-              }
+
             }
           }
         }
@@ -127,14 +132,14 @@
         function drawTimer(){
           ctx.font = "14px Trebuchet MS";
           ctx.fillStyle = "white";
-          ctx.fillText(`TIME: ${hours} : ${minutes} : ${seconds} : ${milliseconds}`, canvas.width / 2, 20);
+          ctx.fillText(`TIME: ${minutes} : ${seconds} : ${milliseconds}`, canvas.width / 2, 20);
         }
 
         // Ball Speedometer
         function drawSpeed(){
           ctx.font = "14px Trebuchet MS";
           ctx.fillStyle = "white";
-          ctx.fillText(`Ball Speed: ${ballSpeed}`, 95, 20);
+          ctx.fillText(`Ball Speed: ${ballSpeed-3}x`, 95, 20);
         }
       // Functions
       function drawBricks(){
@@ -251,10 +256,12 @@
           }
           else{
             lives--;
-            if(!lives){
+            if(lives <= 0){
+              gameOver = true;
               alert("GAME OVER!");
               document.location.reload();
-            } 
+              
+            }
             else {
               x = canvas.width / 2;
               y = canvas.height - 30;
@@ -266,10 +273,10 @@
         }
         // User input
         if(rightPressed){
-          paddleX = Math.min(paddleX + 7, canvas.width - paddleWidth)
+          paddleX = Math.min(paddleX + 7, canvas.width - paddleWidth / 2)
         } 
         else if(leftPressed){
-          paddleX = Math.max(paddleX - 7, 0);
+          paddleX = Math.max(paddleX - 7, -(paddleWidth / 2));
         }
         x += dx;
         y += dy;
@@ -280,15 +287,74 @@
 
       // Actually call the function(s)
       draw();
-      function keyDownHandler(e){
+
+      // Pause
+      function pauseKeyDownHandler(e){
         if(e.key === "p"){
-          myReq = window.cancelAnimationFrame(myReq);
+          showPauseUI();
         }        
         if(!myReq && e.key === "m"){
           myReq = window.requestAnimationFrame(draw);
         }
       }
-   
+
+      function showPauseUI(){
+        myReq = window.cancelAnimationFrame(myReq);
+
+        ctx.rect(30, 30, canvas.width * 0.88, canvas.height * 0.8);
+        ctx.fillStyle = "lightblue";
+        ctx.fill();
+        ctx.closePath();   
+        
+        ctx.font = "bold 26px Trebuchet MS";
+        ctx.fillStyle = "black";
+        ctx.fillText("PAUSED!", (canvas.width / 2) - 50, 80);    
+
+        ctx.font = "bold 16px Trebuchet MS";
+        ctx.fillStyle = "black";
+        ctx.fillText("Press the 'm' key to continue playing...", 80, 110); 
+      }      
+
+      function pauseButton(){
+          if(myReq){
+            showPauseUI();
+        }
+        else if(!myReq){
+          myReq = window.requestAnimationFrame(draw);
+        }
+      }
+
+      // Game Over!
+      function gameOver1(){
+        myReq = window.cancelAnimationFrame(myReq);
+
+        ctx.rect(30, 30, canvas.width * 0.88, canvas.height * 0.8);
+        ctx.fillStyle = "lightred";
+        ctx.fill();
+        ctx.closePath();   
+
+        ctx.font = "bold 26px Trebuchet MS";
+        ctx.fillStyle = "black";
+        ctx.fillText("GAME OVER!", (canvas.width / 2) - 50, 80);    
+
+        ctx.font = "bold 16px Trebuchet MS";
+        ctx.fillStyle = "black";
+        ctx.fillText("Press the 'r' key to retry...", 80, 110); 
+
+        
+        //gameOver = true;
+      
+        //alert("GAME OVER!");
+        //document.location.reload();
+      }  
+      
+
+      function restartKeyDownHandler(e){
+          if(gameOver === true && e.key === "y"){
+            document.location.reload();
+          }        
+        }
+     
     </script>
   </body>
 </html>
